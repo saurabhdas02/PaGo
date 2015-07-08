@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/background_gray">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="80dp"
+        android:id="@id/store_logo_image_view"
+        android:scaleType="fitCenter"/>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.6"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STARBUCKS"
+        android:gravity="left"
+        android:id="@id/store_name_text_view"
+        android:textColor="@color/dark_text_color"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Powai"
+        android:gravity="left"
+        android:layout_below="@id/store_name_text_view"
+        android:textColor="@color/dark_text_color"
+        android:id="@id/store_location_text_view"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="1.2km"
+        android:gravity="left"
+        android:layout_below="@id/store_name_text_view"
+        android:textColor="@color/dark_text_color"
+        android:id="@id/store_distance_text_view"/>
+
+</LinearLayout>

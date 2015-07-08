@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <screenName name="pago.com.pago.loginscreen.controller.LoginMain">Vito LoginScreen</screenName>
+    <screenName name="pago.com.pago.main.controller.MainActivity">Vito CategoryScreen</screenName>
+    <screenName name="pago.com.pago.homescreen.controller.HomeScreenActivity">Vito OffersScreen</screenName>
+    <screenName name="pago.com.pago.filters.controller.MainFilter">Vito FilterScreen</screenName>
+
+    <string name="ga_trackingId">UA-63906684-1</string>
+
+    <!-- The dispatching period in seconds when Google Play services is
+     unavailable. The default period is 1800 seconds or 30 minutes -->
+    <integer name="ga_dispatchPeriod">1800</integer>
+
+    <!-- Enable dry run mode. Default is false -->
+    <bool name="ga_dryRun">false</bool>
+
+</resources>

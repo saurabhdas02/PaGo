@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    <color name="background_gray">#dce2ee</color>
+-->
+    <color name="background_gray">#FDE3A7</color>
+    <color name="dialog_title">#96281B</color>
+
+    <color name="dark_text_color">#687fab</color>
+    <color name="background_green_color">#3ac165</color>
+    <color name="background_blue_color">#183794</color>
+    <color name="white_color">#ffffff</color>
+    <color name="golden_color">#FFD700</color>
+    <color name="button_border_color">#c6cbd6</color>
+    <color name="title_text">#F22613</color>
+    <color name="desc_text">#96281B</color>
+
+
+
+</resources>

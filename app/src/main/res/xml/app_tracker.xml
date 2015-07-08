@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ga_trackingId">UA-63906684-1</string>
+
+    <bool name="ga_autoActivityTracking">true</bool>
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <string name="ga_appName">GoogleAnaly</string>
+    <string name="ga_appVersion">1.0</string>
+
+    <bool name="ga_debug">true</bool>
+
+<!--
+    <item name="ga_dispatchPeriod" format="integer" type="integer">120</item>
+-->
+
+    <int name="ga_dispatchPeriod">30</int>
+
+    <string name="ga_sampleFrequency">50.0</string>
+
+    <bool name="ga_anonymizeIp">true</bool>
+<!--
+    <bool name="ga_dryRun">false</bool>
+-->
+
+    <string name="ga_sampleFrequency">100.0</string>
+
+    <integer name="ga_sessionTimeout">-1</integer>
+
+    <string name="pago.com.pago">Vito</string>
+
+</resources>

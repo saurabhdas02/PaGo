@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <!-- Main ListView
+         Always give id value as list(@android:id/list)
+    -->
+    <pago.com.pago.CusFntTextView
+        android:id="@id/txtInternet"
+        android:layout_width="150pt"
+        android:layout_height="15pt"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/title_text"
+        android:gravity="center"
+        android:visibility="gone"/>
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#ffffff"
+        android:dividerHeight="6dp" />
+</LinearLayout>

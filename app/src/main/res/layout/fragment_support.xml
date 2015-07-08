@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:editable="true"
+        android:layout_marginTop="60dp"
+        android:id="@+id/userFeedback"/>
+
+    <pago.com.pago.CusFntTextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="50dp"
+        android:text="Please give your feedbacks and send back to us"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="10pt"/>
+
+    <pago.com.pago.CusFntTextView
+        android:id="@+id/txtSupport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2pt"
+        android:layout_marginStart="2pt"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="@color/background_blue_color"
+        android:textSize="12pt"/>
+
+</LinearLayout>

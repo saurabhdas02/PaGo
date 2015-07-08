@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="@android:integer/config_longAnimTime"
+        android:valueFrom="0"
+        android:valueTo="1000"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:valueType="floatType"
+        android:propertyName="x">
+    </objectAnimator>
+</set>

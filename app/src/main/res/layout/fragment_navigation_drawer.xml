@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:choiceMode="singleChoice"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="0dp"
+    android:background="@color/background_gray"
+    tools:context=".NavigationDrawerFragment" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_button_text_color_event_handler"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:orientation="vertical"
+        android:id="@id/settings_profile_button"
+        android:clickable="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/profileicon"
+            android:background="@android:color/transparent"
+            android:id="@id/settings_profile_picture_imageview"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:padding="8dp"
+            android:textColor="@color/dark_text_color"
+            android:background="@android:color/transparent"
+            android:id="@id/settings_username_textfield"/>
+    </LinearLayout>
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saved Offers"
+        android:layout_below="@id/settings_profile_button"
+        android:textColor="@drawable/settings_button_text_color_event_handler"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="@drawable/setting_buttons_event_handlers"
+        android:id="@id/settings_offers_button" />
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preferences"
+        android:textColor="@drawable/settings_button_text_color_event_handler"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="@drawable/setting_buttons_event_handlers"
+        android:id="@id/settings_preference_button"
+        android:visibility="gone"
+        android:layout_below="@id/settings_offers_button" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Support"
+        android:textColor="@drawable/settings_button_text_color_event_handler"
+        android:layout_below="@id/settings_preference_button"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="@drawable/setting_buttons_event_handlers"
+        android:id="@id/settings_support_button"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/settings_button_text_color_event_handler"
+        android:padding="8dp"
+        android:background="@drawable/setting_buttons_event_handlers"
+        android:layout_above="@id/settings_home_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:layout_below="@+id/relativeLayout" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textColor="@drawable/settings_button_text_color_event_handler"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="@drawable/setting_buttons_event_handlers"
+        android:id="@id/settings_home_button"
+        android:layout_marginBottom="97dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

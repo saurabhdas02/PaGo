@@ -1,0 +1,311 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@color/background_gray">
+    <pago.com.pago.CusFntTextView
+        android:id="@id/txtInternet"
+        android:layout_width="150pt"
+        android:layout_height="15pt"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/title_text"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <pago.com.pago.CusFntTextView
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:textSize="10pt"
+        android:gravity="center"
+        android:textColor="@color/background_green_color"/>
+
+    <pago.com.pago.CusFntTextView
+        android:id="@+id/btnSubmit1"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:text="All Offers"
+        android:clickable="true"
+        android:onClick="allOffers"
+        android:textSize="10pt"
+        android:gravity="center"
+        android:layout_below="@id/username"
+        android:background="@color/title_text"
+        android:textColor="@color/white_color"/>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="35pt">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_marginTop="12pt">
+
+                <ImageView
+                    android:id="@+id/clothing"
+                    android:layout_weight="1"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:onClick="getOffersClothing"
+                    android:src="@drawable/clothing"/>
+
+
+                <ImageView
+                    android:id="@+id/electronics"
+                    android:onClick="getOffersElectronics"
+                    android:layout_weight="1"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:src="@drawable/electronics" />
+            </TableRow>
+            <TableRow>
+                <pago.com.pago.CusFntTextViewNew
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Apparels+"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginStart="5pt"
+                    android:textColor="@color/title_text" />
+
+
+                <pago.com.pago.CusFntTextViewNew
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Electronics"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginStart="10pt"
+                    android:textColor="@color/title_text" />
+            </TableRow>
+
+            <TableRow>
+                <ImageView
+                    android:layout_weight="1"
+                    android:onClick="getOffersHome"
+                    android:id="@+id/HomeAndKitchen"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:src="@drawable/home" />
+                <ImageView
+                    android:id="@+id/sports"
+                    android:layout_weight="1"
+                    android:onClick="getOffersSports"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:src="@drawable/sports" />
+            </TableRow>
+            <TableRow>
+                <pago.com.pago.CusFntTextViewNew
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Home+"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginStart="5pt"
+                    android:textColor="@color/title_text" />
+
+
+                <pago.com.pago.CusFntTextViewNew
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Fitness"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginStart="10pt"
+                    android:textColor="@color/title_text" />
+            </TableRow>
+            <TableRow>
+                <ImageView
+                    android:id="@+id/BooksAndMedia"
+                    android:layout_weight="1"
+                    android:onClick="getOffersBooksAndMedia"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:src="@drawable/books" />
+                <ImageView
+                    android:id="@+id/WatchesAndJewellery"
+                    android:layout_weight="1"
+                    android:onClick="getOffersJewellery"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:src="@drawable/watches" />
+            </TableRow>
+            <TableRow>
+                <pago.com.pago.CusFntTextViewNew
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Books and Media"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginStart="5pt"
+                    android:textColor="@color/title_text" />
+
+
+                <pago.com.pago.CusFntTextViewNew
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Watch and Jewellery"
+                    android:layout_marginLeft="18pt"
+                    android:layout_marginStart="18pt"
+                    android:textColor="@color/title_text" />
+            </TableRow>
+            <TableRow>
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/dining"
+                    android:onClick="getOffersDining"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:src="@drawable/restaurant" />
+                <ImageView
+                    android:id="@+id/travel"
+                    android:layout_weight="1"
+                    android:onClick="getOffersTravel"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:src="@drawable/travel" />
+            </TableRow>
+            <TableRow>
+                <pago.com.pago.CusFntTextViewNew
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Dining"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginStart="5pt"
+                    android:textColor="@color/title_text" />
+
+
+                <pago.com.pago.CusFntTextViewNew
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Travel"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginStart="10pt"
+                    android:textColor="@color/title_text" />
+            </TableRow>
+            <TableRow>
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/handbags"
+                    android:onClick="getOffersHandbags"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:src="@drawable/bags" />
+                <ImageView
+                    android:id="@+id/shoes"
+                    android:layout_weight="1"
+                    android:onClick="getOffersShoes"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:src="@drawable/shoes" />
+            </TableRow>
+            <TableRow>
+                <pago.com.pago.CusFntTextViewNew
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Bags"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginStart="5pt"
+                    android:textColor="@color/title_text" />
+
+
+                <pago.com.pago.CusFntTextViewNew
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Shoes"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginStart="10pt"
+                    android:textColor="@color/title_text" />
+            </TableRow>
+            <TableRow>
+                <ImageView
+                    android:id="@+id/beauty"
+                    android:layout_weight="1"
+                    android:onClick="getOffersBeauty"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:src="@drawable/health_beauty" />
+                <ImageView
+                    android:id="@+id/toysandbaby"
+                    android:layout_weight="1"
+                    android:onClick="getOffersToysAndBaby"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:src="@drawable/baby" />
+            </TableRow>
+            <TableRow>
+                <pago.com.pago.CusFntTextViewNew
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Beauty"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginStart="5pt"
+                    android:textColor="@color/title_text" />
+
+
+                <pago.com.pago.CusFntTextViewNew
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Baby+"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginStart="10pt"
+                    android:textColor="@color/title_text" />
+            </TableRow>
+            <TableRow>
+                <ImageView
+                    android:id="@+id/petsupply"
+                    android:layout_weight="1"
+                    android:onClick="getOffersPetSupply"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:src="@drawable/pets" />
+                <ImageView
+                    android:id="@+id/storeandexperience"
+                    android:layout_weight="1"
+                    android:onClick="getOffersStoreAndOthers"
+                    android:layout_width="180px"
+                    android:layout_height="180px"
+                    android:src="@drawable/store_others" />
+            </TableRow>
+            <TableRow>
+                <pago.com.pago.CusFntTextViewNew
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Pets+"
+                    android:layout_marginLeft="5pt"
+                    android:layout_marginStart="5pt"
+                    android:textColor="@color/title_text" />
+
+
+                <pago.com.pago.CusFntTextViewNew
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Others"
+                    android:layout_marginLeft="10pt"
+                    android:layout_marginStart="10pt"
+                    android:textColor="@color/title_text" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

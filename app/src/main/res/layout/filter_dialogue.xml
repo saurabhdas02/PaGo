@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background_gray"
+        android:minHeight="300dp"
+        android:orientation="vertical" >
+
+
+    <ImageView
+        android:id="@+id/imv1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="2pt"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1" />
+
+    <pago.com.pago.CusFntTextViewNew
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5pt"
+        android:layout_marginLeft="2pt"
+        android:layout_marginStart="2pt"
+        android:textSize="8pt"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <pago.com.pago.CusFntTextView
+        android:id="@+id/val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5pt"
+        android:layout_marginLeft="2pt"
+        android:layout_marginStart="2pt"
+        android:textSize="8pt" />
+
+    <pago.com.pago.CusFntTextView
+        android:id="@+id/validity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/val"
+        android:layout_toRightOf="@id/val"
+        android:layout_marginTop="5pt"
+        android:layout_marginLeft="2pt"
+        android:layout_marginStart="2pt"
+        android:textSize="8pt" />
+    </RelativeLayout>
+
+    <pago.com.pago.CusFntTextView
+        android:id="@+id/coupon_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="5pt"
+        android:layout_marginLeft="2pt"
+        android:layout_marginStart="2pt"
+        android:textSize="8pt"/>
+
+
+    <pago.com.pago.CusFntTextView
+        android:id="@+id/brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5pt"
+        android:layout_marginLeft="2pt"
+        android:layout_marginStart="2pt"
+        android:textSize="8pt"/>
+
+    <pago.com.pago.CusFntTextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5pt"
+        android:layout_marginLeft="2pt"
+        android:layout_marginStart="2pt"
+        android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/btnSubmit1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="Redeem"
+            android:layout_alignParentBottom="true"
+            android:background="@color/title_text"
+            android:textColor="@color/white_color"/>
+    </LinearLayout>
+    </ScrollView>

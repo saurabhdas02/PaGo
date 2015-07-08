@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/background_gray" >
+
+    <pago.com.pago.CusFntTextViewNew
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Area"
+        android:gravity="center"
+        android:layout_marginTop="10pt"
+        android:textColor="@color/title_text"
+        android:padding="0dp"
+        android:textSize="22dp"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:prompt="@string/area"
+        android:popupBackground="@color/background_gray"/>
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5pt"
+        android:background="@color/background_gray"/>
+
+
+
+</LinearLayout>

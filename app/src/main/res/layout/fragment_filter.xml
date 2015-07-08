@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pago.com.pago.filters.controller.FilterFragment"
+    android:padding="8dp"
+    android:background="@color/button_border_color">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginBottom="18pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Filters!"
+                android:gravity="center"
+                android:textColor="@color/background_blue_color"
+                android:padding="0dp"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/txtViewf1"
+                android:layout_marginBottom="14pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:gravity="center"
+                android:textColor="@color/dark_text_color"
+                android:padding="12dp"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_marginBottom="14pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Merchant"
+                android:gravity="center"
+                android:textColor="@color/dark_text_color"
+                android:padding="12dp"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_marginBottom="14pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brand"
+                android:gravity="center"
+                android:textColor="@color/dark_text_color"
+                android:padding="12dp"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_marginBottom="14pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coupon Type"
+                android:gravity="center"
+                android:textColor="@color/dark_text_color"
+                android:padding="12dp"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_marginBottom="14pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Area"
+                android:gravity="center"
+                android:textColor="@color/dark_text_color"
+                android:padding="12dp"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bank"
+                android:gravity="center"
+                android:textColor="@color/dark_text_color"
+                android:padding="12dp"
+                android:textSize="25dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

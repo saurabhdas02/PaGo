@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    tools:context="pago.com.pago.register.controller.RegistrationActivity">
+
+
+    <pago.com.pago.CusFntTextView
+        android:text="Registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@color/background_green_color"
+        android:gravity="center"
+        android:height="48dp"
+        android:layout_alignParentTop="true"
+        android:id="@id/welcome_text_view"
+        android:textSize="24sp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_text_view"
+        android:layout_above="@id/t_c_button">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:src="@drawable/profileicon"/>
+        <pago.com.pago.CusFntTextView
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@drawable/layout_bg"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/dark_text_color"
+            android:hint="Username"
+            android:gravity="center"
+            android:id="@id/username_edit_text"
+            />
+
+
+        <pago.com.pago.CusFntTextView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@drawable/layout_bg"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/dark_text_color"
+            android:hint="Name"
+            android:gravity="center"
+            android:id="@id/name_edit_text"
+            />
+
+        <pago.com.pago.CusFntTextView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@drawable/layout_bg"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/dark_text_color"
+            android:hint="Phone Number"
+            android:gravity="center"
+            android:id="@id/number_edit_text"
+            />
+
+        <pago.com.pago.CusFntTextView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@drawable/layout_bg"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/dark_text_color"
+            android:hint="Date Of Birth"
+            android:gravity="center"
+            android:id="@id/date_of_birth_edit_text"
+            />
+
+        <pago.com.pago.CusFntTextView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@drawable/layout_bg"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/dark_text_color"
+            android:hint="City"
+            android:gravity="center"
+            android:id="@id/city_edit_text"
+            />
+
+        <RelativeLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp">
+            <pago.com.pago.CusFntTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_layout"
+            android:layout_gravity="center"
+            android:text="Signup"
+            android:textColor="@android:color/white"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:id="@id/signup_button"
+            android:layout_alignParentLeft="true"/>
+
+            <pago.com.pago.CusFntTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_button_bg"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:id="@id/cancel_button"
+            android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+    <pago.com.pago.CusFntTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terms and conditions"
+        android:textColor="@color/dark_text_color"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:id="@id/t_c_button"/>
+
+</RelativeLayout>

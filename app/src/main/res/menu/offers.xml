@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="pago.com.pago.filters.controller.FilterFragment" >
+    <item android:id="@+id/action_apply"
+        android:title="Apply Filter"
+        android:orderInCategory="100"
+        android:text="Apply"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:icon="@drawable/apply_filter"
+        android:showAsAction="always" />
+
+</menu>

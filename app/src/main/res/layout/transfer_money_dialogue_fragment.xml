@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm?"
+        android:gravity="center"
+        android:textColor="@color/white_color"
+        android:textSize="18dp"
+        android:padding="16dp"
+        android:background="@color/background_green_color"
+        android:id="@+id/titleView"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg"
+        android:textColor="@color/dark_text_color"
+        android:hint="Enter Pin"
+        android:gravity="center"
+        android:id="@id/payru_id_text_view"
+        android:layout_below="@id/titleView"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg"
+        android:textColor="@color/dark_text_color"
+        android:hint="PayRu ID"
+        android:gravity="center"
+        android:id="@id/transfer_amount_text_view"
+        android:layout_below="@id/payru_id_text_view"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_centerInParent="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transfer_amount_text_view"
+        android:orientation="horizontal"
+        android:padding="8dp">
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_layout"
+        android:layout_gravity="center"
+        android:text="Yes"
+        android:textColor="@android:color/white"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:gravity="center"
+        android:id="@id/login_button"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="4dp"/>
+
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_button_bg"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="No"
+        android:textColor="@android:color/white"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:id="@id/register_button"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/transfer_amount_text_view"
+        android:layout_marginLeft="4dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

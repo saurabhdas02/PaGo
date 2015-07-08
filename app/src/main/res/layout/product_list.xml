@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/background_gray">
+
+    <!-- Offer id (offer_id) - will be HIDDEN - used to pass to other activity -->
+    <TextView
+        android:id="@+id/offerid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+    <pago.com.pago.CusFntTextViewEBold
+        android:id="@+id/name"
+        android:text="name"
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:textSize="8pt"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.7"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <pago.com.pago.CusFntTextViewNew
+            android:id="@+id/title"
+            android:text="title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textSize="8pt"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:scrollHorizontally="true"
+            android:textColor="@color/title_text" />
+
+        <pago.com.pago.CusFntTextView
+            android:id="@+id/offer_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:text="Ends on: "
+            android:textColor="@color/title_text" />
+
+        <pago.com.pago.CusFntTextView
+            android:id="@+id/offer_validity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_toEndOf="@id/offer_val"
+            android:layout_toRightOf="@id/offer_val"
+            android:textColor="@color/title_text" />
+
+
+            <pago.com.pago.CusFntTextView
+                android:id="@+id/tag1"
+                android:layout_width="wrap_content"
+                android:layout_height="10pt"
+                android:text="tag1"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_below="@id/offer_validity"
+                android:background="@color/title_text"
+                android:textColor="@color/white_color" />
+
+            <pago.com.pago.CusFntTextView
+                android:id="@+id/tag2"
+                android:layout_width="wrap_content"
+                android:layout_height="10pt"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/offer_validity"
+                android:layout_toEndOf="@id/tag1"
+                android:layout_toRightOf="@id/tag1"
+                android:gravity="center"
+                android:text="tag2"
+                android:background="@color/title_text"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white_color" />
+
+            <pago.com.pago.CusFntTextView
+                android:id="@+id/tag3"
+                android:layout_width="wrap_content"
+                android:layout_height="10pt"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/tag2"
+                android:layout_toRightOf="@id/tag2"
+                android:gravity="center"
+                android:layout_below="@id/offer_validity"
+                android:text="tag3"
+                android:background="@color/title_text"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white_color" />
+
+        <ImageView
+            android:id="@+id/imgfavorite"
+            android:layout_width="20pt"
+            android:layout_height="30pt"
+            android:layout_below="@id/tag1"
+            android:src="@drawable/ic_action_favorite"
+            android:clickable="true" />
+        <ImageView
+            android:id="@+id/imgShare"
+            android:layout_width="20pt"
+            android:layout_height="30pt"
+            android:layout_below="@id/tag1"
+            android:layout_toEndOf="@id/imgfavorite"
+            android:layout_toRightOf="@id/imgfavorite"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_action_share"/>
+        <ImageView
+            android:id="@+id/imgLike"
+            android:layout_width="20pt"
+            android:layout_height="30pt"
+            android:layout_below="@id/tag1"
+            android:layout_toEndOf="@id/imgShare"
+            android:layout_toRightOf="@id/imgShare"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_action_good"/>
+        <ImageView
+            android:id="@+id/imgDislike"
+            android:layout_width="20pt"
+            android:layout_height="30pt"
+            android:layout_below="@id/tag1"
+            android:layout_toEndOf="@id/imgLike"
+            android:layout_toRightOf="@id/imgLike"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_action_bad"/>
+        </RelativeLayout>
+
+</LinearLayout>
